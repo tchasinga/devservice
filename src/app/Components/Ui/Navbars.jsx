@@ -2,7 +2,6 @@
 import React from "react";
 import { useState } from "react"; 
 import "../../globals.css";
-import Image from "next/image";
 import Link from "next/link";
 import WordRotate from "@/app/Animation/magicui/wordrotate";
 
