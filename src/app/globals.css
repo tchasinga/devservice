@@ -8,4 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
+.bg-blacking{
+  background: rgba( 255, 255, 255, 0 );
+  backdrop-filter: blur( 3px ); 
+}
