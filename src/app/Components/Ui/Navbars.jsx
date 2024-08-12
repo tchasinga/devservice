@@ -4,6 +4,9 @@ import { useState } from "react";
 import "../../globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import WordRotate from "@/app/Animation/magicui/wordrotate";
+
+const words = ["Dev service", "Frontend", "Backend", "App dev", "Database", "Apis config", "Design", "Ui design"]
 
 export default function Navbars() {
   const [open, setOpen] = useState(false);
@@ -21,7 +24,9 @@ export default function Navbars() {
     <nav className="fixed font-poppins font-sans w-full left-0 top-0 z-[999] mypad bg-blacking">
       <div className="flex items-center justify-between">
         <div className="mx-7 w-[150px]">
-          <h1>Balole</h1>
+          <h1 className="text-slate-800 text-2xl font-bold">
+            <WordRotate words={words}/>
+          </h1>
         </div>
 
         <div className="text-gray-900 md:block hidden px-7 py-2 font-medium">
