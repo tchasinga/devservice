@@ -24,12 +24,10 @@ export default function Heros() {
             <p>More</p>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full gap-4">
-           
-              <ShimmerButton className="shadow-2xl">
-              <div className="bg-slate-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
-                 <p>View services</p>
+         
+          <div className="bg-blue-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
+              <p>Get stared</p>
             </div>
-              </ShimmerButton>
 
             <div className="bg-slate-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
               <p>View services</p>

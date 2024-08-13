@@ -6,9 +6,7 @@ export interface ShimmerButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   shimmerColor?: string;
   shimmerSize?: string;
-  borderRadius?: string;
   shimmerDuration?: string;
-  background?: string;
   className?: string;
   children?: React.ReactNode;
 }
@@ -19,8 +17,6 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
       shimmerColor = "#ffffff",
       shimmerSize = "0.05em",
       shimmerDuration = "3s",
-      borderRadius = "100px",
-      background = "rgba(0, 0, 0, 1)",
       className,
       children,
       ...props
@@ -33,10 +29,8 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
           {
             "--spread": "90deg",
             "--shimmer-color": shimmerColor,
-            "--radius": borderRadius,
             "--speed": shimmerDuration,
             "--cut": shimmerSize,
-            "--bg": background,
           } as CSSProperties
         }
         className={cn(
