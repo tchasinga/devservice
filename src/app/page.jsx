@@ -5,8 +5,7 @@ import Keeper from "./Components/Keeper";
 export default function Home() {
   return (
     <>
-    <Keeper/>
-    
+    <Keeper/>    
     {/* Add about section  task for TRACY MIRANJA...*/}
 
 
