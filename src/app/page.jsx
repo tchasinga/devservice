@@ -6,6 +6,11 @@ export default function Home() {
   return (
     <>
     <Keeper/>
+    
+    {/* Add about section  task for TRACY MIRANJA...*/}
+
+
+    {/* Add type of services */}
     </>
   );
 }

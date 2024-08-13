@@ -2,11 +2,13 @@ import React from "react";
 import AnimatedGridPattern from "../Animation/magicui/animated-grid-pattern";
 import { cn } from "../../lib/utils.ts";
 import Navbars from "./Ui/Navbars";
+import Heros from "./Ui/Heros";
 
 export default function Keeper() {
     return (
         <div className="relative  min-h-screen w-full  overflow-hidden ">
             <Navbars/>
+            <Heros/>
           <AnimatedGridPattern
             numSquares={230}
             maxOpacity={0.2}
