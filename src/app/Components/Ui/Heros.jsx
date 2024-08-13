@@ -35,7 +35,7 @@ export default function Heros() {
         {/* New first div */}
         <div className="flex flex-col justify-center text-center md:text-left">
           <p className="text-blue-950 font-semibold text-lg md:text-xl">
-            Welcome to Dev-Service
+            Welcome to dev service
           </p>
           <div className="flex flex-col justify-center text-4xl md:text-5xl text-slate-900 font-extrabold mt-2 first-letter:uppercase">
             <h1>We solve business</h1>
