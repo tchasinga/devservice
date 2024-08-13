@@ -6,14 +6,14 @@ import "./extension.css";
 export default function Heros() {
   return (
     <div className='relative w-full py-[200px] px-4 md:px-8'>
-       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto border-black border onrespo">
+       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto onrespo">
           {/* New first div */}
           <div className="flex flex-col justify-center text-center md:text-left">
               <p className="text-blue-950 font-semibold text-lg md:text-xl">Welcome to Dev-Service</p>
-              <div className="flex flex-col justify-center text-4xl md:text-5xl text-slate-900 font-extrabold mt-2">
+              <div className="flex flex-col justify-center text-4xl md:text-5xl text-slate-900 font-extrabold mt-2 first-letter:uppercase">
                   <h1>We solve business</h1>
-                  <h1>problems with</h1>
-                  <h1>technology</h1>
+                  <h1>Problems with</h1>
+                  <h1>Technology</h1>
               </div>
               <div className="my-5 text-slate-900 font-normal text-sm md:text-base">
                   <p>Our performance is your success, our passion is</p>
