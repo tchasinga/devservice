@@ -2,7 +2,7 @@ import React from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
 import "./extension.css";
-import ShimmerButton from "../../../app/Animation/magicui/ShimmerButtonDemo";
+import SparklesText from "../../../app/Animation/magicui/SparklesText";
 
 export default function Heros() {
   return (
@@ -16,7 +16,9 @@ export default function Heros() {
           <div className="flex flex-col justify-center text-4xl md:text-5xl text-slate-900 font-extrabold mt-2 first-letter:uppercase">
             <h1>We solve business</h1>
             <h1>Problems with</h1>
-            <h1>Technology</h1>
+            <h1>
+                <SparklesText className="text-4xl md:text-5xl" text="Technology" />
+            </h1>
           </div>
           <div className="my-5 text-slate-900 font-normal text-sm md:text-base">
             <p>Our performance is your success, our passion is</p>
