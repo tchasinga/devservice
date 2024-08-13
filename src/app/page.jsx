@@ -5,7 +5,7 @@ import Keeper from "./Components/Keeper";
 export default function Home() {
   return (
     <>
-    {/* thsi section is finished , I'll just the responsive...*/}
+    {/* thsi section is finished , I'll just need to add the responsive...*/}
     <Keeper/>
 
     {/* Add about section  task for TRACY MIRANJA...*/}
@@ -14,7 +14,7 @@ export default function Home() {
     {/* Add type of services task for  TCHASINGA BALOLEBWAMI*/}
 
     
-    {/* All the footer section TRACY MIRANJA... */}
+    {/* All the footer section TRACY MIRANJA...*/}
     </>
   );
 }
