@@ -64,7 +64,7 @@ export default function Heros() {
           <div className="w-full relative">
             <div
               className="w-[500px] h-[500px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
-              style={{ backgroundColor: bgColor, transition: 'background-color 1s ease' }} // Smooth transition
+              style={{ backgroundColor: bgColor, transition: 'background-color 1s ease' }}
             ></div>
             <Image src={myImgIsadded} />
           </div>
