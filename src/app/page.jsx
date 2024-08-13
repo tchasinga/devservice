@@ -8,13 +8,15 @@ export default function Home() {
     {/* thsi section is finished , I'll just need to add the responsive...*/}
     <Keeper/>
 
-    {/* Add about section  task for TRACY MIRANJA...*/}
+    {/* Add about us section  task for TRACY MIRANJA...*/}
 
 
-    {/* Add type of services task for  TCHASINGA BALOLEBWAMI*/}
+    {/* Add type of services task for  TCHASINGA BALOLEBWAMI (for me)*/}
 
     
     {/* All the footer section TRACY MIRANJA...*/}
+
+
     </>
   );
 }
