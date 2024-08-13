@@ -2,11 +2,12 @@
 import React from 'react'
 import myImgIsadded from '../Images/REdI.png'
 import Image from 'next/image'
+import "./extension.css";
 
 export default function Heros() {
   return (
-    <div className='absolute top-[20%] w-full'>
-       <div className="flex justify-between items-center max-w-screen-xl mx-auto border-black border">
+    <div className='absolute top-[20%] w-full onrespo'>
+       <div className="flex justify-between items-center max-w-screen-xl mx-auto border-black border onrespo">
                {/* new first div */}
         <div className="flex flex-col justify-center">
             <p className="text-blue-950 font-semibold">welcom to dev-service</p>
@@ -32,8 +33,11 @@ export default function Heros() {
         </div>
 
        {/* Second div is here */}
-        <div className="flex justify-end items-end">
-            <Image src={myImgIsadded}/>
+        <div className="flex  justify-center items-center">
+            <div className='w-full relative'>
+            <div className="w-[500px] h-[500px] top-[-3%] right-0 left-0  bottom-0 absolute z-[-9999] rounded-full bg-green-700"></div>
+                 <Image src={myImgIsadded}/>
+            </div>
         </div>
 
        </div>
