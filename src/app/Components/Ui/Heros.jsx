@@ -1,10 +1,34 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
 import "./extension.css";
 import SparklesText from "../../../app/Animation/magicui/SparklesText";
 
+// Function to generate a random color in hex format
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 export default function Heros() {
+  // State to store the current background color
+  const [bgColor, setBgColor] = useState(getRandomColor());
+
+  useEffect(() => {
+    // Function to change the background color every 3 seconds
+    const interval = setInterval(() => {
+      setBgColor(getRandomColor());
+    }, 3000); // Change color every 3 seconds
+
+    // Clear the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative w-full py-[200px] px-4 md:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto onrespo">
@@ -26,11 +50,9 @@ export default function Heros() {
             <p>More</p>
           </div>
           <div className="flex flex-col md:flex-row items-center w-full gap-4">
-         
-          <div className="bg-blue-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
-              <p>Get stared</p>
+            <div className="bg-blue-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
+              <p>Get started</p>
             </div>
-
             <div className="bg-slate-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
               <p>View services</p>
             </div>
@@ -38,9 +60,12 @@ export default function Heros() {
         </div>
 
         {/* Second div is here */}
-        <div className="flex  justify-center items-center">
+        <div className="flex justify-center items-center">
           <div className="w-full relative">
-            <div className="w-[500px] h-[500px] top-[-3%] right-0 left-0  bottom-0 absolute z-[-9999] rounded-full bg-green-700"></div>
+            <div
+              className="w-[500px] h-[500px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
+              style={{ backgroundColor: bgColor, transition: 'background-color 1s ease' }} // Smooth transition
+            ></div>
             <Image src={myImgIsadded} />
           </div>
         </div>
