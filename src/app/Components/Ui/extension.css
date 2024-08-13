@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 468px) {
+    .onrespo {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
