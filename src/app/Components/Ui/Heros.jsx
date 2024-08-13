@@ -1,9 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
+import myImgIsadded from '../Images/REdI.png'
+import Image from 'next/image'
 
 export default function Heros() {
   return (
-    <div className='absolute top-[10%] border-black border'>
-        {/* new first div */}
+    <div className='absolute top-[20%] w-full'>
+       <div className="flex justify-between items-center max-w-screen-xl mx-auto border-black border">
+               {/* new first div */}
         <div className="flex flex-col justify-center">
             <p className="text-blue-950 font-semibold">welcom to dev-service</p>
             <div className="flex flex-col justify-center text-5xl text-slate-900 font-extrabold mt-2">
@@ -27,10 +31,12 @@ export default function Heros() {
             </div>
         </div>
 
-        {/* Second div */}
-        <div className="">
-
+       {/* Second div is here */}
+        <div className="flex justify-end items-end">
+            <Image src={myImgIsadded}/>
         </div>
+
+       </div>
     </div>
   )
 }
