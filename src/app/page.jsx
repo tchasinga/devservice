@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Keeper from "./Components/Keeper";
 import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       {/* Add type of services task for  TCHASINGA BALOLEBWAMI (for me)*/}
 
       {/* All the footer section TRACY MIRANJA...*/}
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }
