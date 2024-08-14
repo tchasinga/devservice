@@ -2,6 +2,7 @@
 import React from "react";
 import AnimatedTooltipPreview from "../Ui/Tooltips";
 import myDataobject from '../Data/Services.js'
+import MarqueeDemo from "../Ui/MarqueeDemo";
 
 export default function Servicetypeof() {
   return (
@@ -47,10 +48,14 @@ export default function Servicetypeof() {
         </div>
 
         {/* Adding testimonials...*/}
-        <div className="text-slate-900 text-2xl">
+        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px]">
           <h1>We made more than your expectation</h1>
+          <p className="text-xs">Your imagination are your own limit</p>
         </div>
-
+        
+        <div className="py-[40px]">
+        <MarqueeDemo />
+        </div>
       </div>
     </div>
   );
