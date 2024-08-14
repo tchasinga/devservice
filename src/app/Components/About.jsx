@@ -9,6 +9,31 @@ function About() {
           <h1 className="text-white text-4xl font-bold">About Us</h1>
         </div>
       </div>
+      <div className="flex bg-white h-[30vh] w-full gap-3 justify-center items-center">
+        <div className="w-[25%]">
+          <h3 className="text-2xl text-center text-black font-bold">
+            Society Where There Is Understanding
+          </h3>
+        </div>
+        <div className="w-[25%]">
+          <p>
+            <span className="text-blue-950 font-bold text-2xl">L</span>orem,
+            ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur
+            aliquid eveniet nesciunt? Mollitia doloremque, velit sed nihil
+            suscipit rem est temporibus libero, accusantium aperiam ipsam sequi
+            earum. Exercitationem, et!
+          </p>
+        </div>
+        <div className="w-[25%]">
+          {" "}
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            nesciunt id amet provident vitae accusamus maiores. Perferendis
+            quidem quas expedita consequatur, voluptatum alias magni at sit
+            atque in natus quisquam?
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
