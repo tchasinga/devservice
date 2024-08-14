@@ -45,6 +45,12 @@ export default function Servicetypeof() {
                 ))
             }
         </div>
+
+        {/* Adding testimonials...*/}
+        <div className="text-slate-900 text-2xl">
+          <h1>We made more than your expectation</h1>
+        </div>
+
       </div>
     </div>
   );
