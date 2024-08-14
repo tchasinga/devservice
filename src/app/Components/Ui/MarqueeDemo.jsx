@@ -10,6 +10,12 @@ const reviews = [
     img: "https://media.licdn.com/dms/image/v2/D4D03AQHZTdipI6yGvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723556477421?e=1729123200&v=beta&t=0l1jWNZ8cVYI9GOqgnQoKdXBjwVBL9ES3NSOLyrCUJc",
   },
   {
+    name: "Benjamin Kisenge",
+    username: "@Kisenge",
+    body:"I am deeply impressed by this work, it surpasses my expectations. I truly value the exceptional quality and excellence demonstrated.",
+    img: "https://media.licdn.com/dms/image/v2/D4D35AQF537cb-jwO5A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1690884162923?e=1724252400&v=beta&t=Ky7lm1vwF3qudF3kXfh9A0Q9icFBzB-aVxTbQt1L67g",
+  },
+  {
     name: "Eloghene (geekelo) Otiede",
     username: "@geekelo",
     body: "I don't know what to say. I'm speechless. This is amazing.",
@@ -24,20 +30,26 @@ const reviews = [
   {
     name: "Arnold Sibita",
     username: "@Sibita",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "I am truly impressed and at a loss for words. This is outstanding, and I am extremely pleased with it.",
     img: "https://media.licdn.com/dms/image/D4D03AQGQMygYi0753A/profile-displayphoto-shrink_800_800/0/1721858116242?e=1729123200&v=beta&t=Y-pj9pkUExKBFtd3rFFGQMIoZAssxW6SiOVWGd1y-qw",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    name: "Jonathan Z",
+    username: "@JonathanZ",
+    body: "I am utterly speechless. This is exceptional, and I am genuinely delighted with the result",
+    img: "https://media.licdn.com/dms/image/C4E03AQENTdcRviwSHA/profile-displayphoto-shrink_800_800/0/1640814336093?e=1729123200&v=beta&t=c5aYxPPVM0FT3dChcXha_dzl70RLWaSMUiESyrDA9tI",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    name: "Joel Kalema",
+    username: "@JKalema",
+    body: "I am profoundly impressed. This is outstanding, and I am very pleased with the outcome.",
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQGRJrS9sT2hBQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685740141403?e=1729123200&v=beta&t=q3ixaA3NuRT0A2fDoRQIH4dgCVqW3anzk5VZo1BBlbo",
+  },
+  {
+    name: "Tumaini Maganiko",
+    username: "@Maganiko",
+    body: "I am completely astounded. This is extraordinary, and I am thoroughly impressed with the results.",
+    img: "https://media.licdn.com/dms/image/D4D03AQEshqA4oHIYBQ/profile-displayphoto-shrink_800_800/0/1714038633177?e=1729123200&v=beta&t=3CfIQcQlcYKGKlcpmQWwVhAoOe3IXmP-7mrfuUFJ23c",
   },
 ];
 
