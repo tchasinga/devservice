@@ -12,7 +12,7 @@ export default function Navbars() {
   const menuLinks = [
     { name: "Welcom", link: "#home" },
     { name: "Advantage", link: "#advantage" },
-    { name: "Description", link: "#description" },
+    { name: "About us", link: "#description" },
     { name: "Services", link: "#services" },
     { name: "Our-works", link: "#theworks" },
     { name: "Apply-now", link: "../apply" },
