@@ -4,28 +4,28 @@ import Marquee from "../../Animation/magicui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Tsongo (Tshisola) Mira",
+    username: "@Tsongo",
+    body: "I am thoroughly impressed by this; it exceeds my expectations. I absolutely appreciate the excellence of this work.",
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQHZTdipI6yGvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723556477421?e=1729123200&v=beta&t=0l1jWNZ8cVYI9GOqgnQoKdXBjwVBL9ES3NSOLyrCUJc",
   },
   {
-    name: "Jill",
-    username: "@jill",
+    name: "Eloghene (geekelo) Otiede",
+    username: "@geekelo",
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    img: "https://media.licdn.com/dms/image/C4E03AQFEJHEJKBCFWg/profile-displayphoto-shrink_800_800/0/1658831715875?e=1729123200&v=beta&t=ZrX_FgnJ_DLwn96zf0zbk16qXsYEO0tchYurAuqUiqE",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    name: "El Dixer",
+    username: "@ElDixer",
+    body: "Words cannot fully capture my admiration for this. It is exceptional, and I am genuinely thrilled with the result.",
+    img: "https://media.licdn.com/dms/image/v2/D4D03AQHUQ1xGo58wsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687465055150?e=1729123200&v=beta&t=u_BCIgT34ESRXTjMLfQDK5imEqO9TjgKt0N-H2nGrPo",
   },
   {
-    name: "Jane",
-    username: "@jane",
+    name: "Arnold Sibita",
+    username: "@Sibita",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    img: "https://media.licdn.com/dms/image/D4D03AQGQMygYi0753A/profile-displayphoto-shrink_800_800/0/1721858116242?e=1729123200&v=beta&t=Y-pj9pkUExKBFtd3rFFGQMIoZAssxW6SiOVWGd1y-qw",
   },
   {
     name: "Jenny",
@@ -69,7 +69,7 @@ const ReviewCard = ({
           <p className="text-xs font-medium text-black">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm line-clamp-3">{body}</blockquote>
     </figure>
   );
 };
