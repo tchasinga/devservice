@@ -5,7 +5,7 @@ import "../../globals.css";
 import Link from "next/link";
 import WordRotate from "../../../app/Animation/magicui/wordrotate";
 
-const words = ["Dev service", "Frontend", "Backend", "App dev", "Database", "Apis config", "Design", "Ui design"]
+const words = ["Dev service", "Frontend", "Backend", "App dev", "Database", "Apis config", " Web design", "Ui design"]
 
 export default function Navbars() {
   const [open, setOpen] = useState(false);
