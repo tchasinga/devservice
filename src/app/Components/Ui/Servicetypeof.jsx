@@ -36,7 +36,7 @@ export default function Servicetypeof() {
             {
                 myDataobject.map((item) => (
                     <div key={item.id} className="flex justify-center items-center gap-2 m-2">
-                       <div className="text-2xl bg-blue-700 p-2 rounded-full">{item.MyIcons}</div>
+                       <div className="text-2xl bg-blue-700 p-2 rounded-full text-white">{item.MyIcons}</div>
                        <div className="flex flex-col justify-center">
                             <h1 className="text-slate-900 text-sm font-bold">{item.myTitle}</h1>
                             <p className="text-slate-900 text-xs line-clamp-2">{item.Description}</p>
