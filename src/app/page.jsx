@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Keeper from "./Components/Keeper";
-
+import Servicetypeof from '../app/Components/Ui/Servicetypeof'
 
 export default function Home() {
   return (
@@ -12,7 +12,8 @@ export default function Home() {
 
 
     {/* Add type of services task for  TCHASINGA BALOLEBWAMI (for me)*/}
-
+    
+    <Servicetypeof/>
     
     {/* All the footer section TRACY MIRANJA...*/}
 
