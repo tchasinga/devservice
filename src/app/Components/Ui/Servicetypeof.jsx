@@ -32,6 +32,7 @@ export default function Servicetypeof() {
         </div>
 
         {/* Displaying data  */}
+        
       </div>
     </div>
   );
