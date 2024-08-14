@@ -1,4 +1,5 @@
-"use client";
+
+"use client"
 import React, { useState, useEffect } from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
