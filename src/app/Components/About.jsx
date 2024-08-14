@@ -4,11 +4,12 @@ function About() {
   return (
     <div className="bg-black h-screen w-full">
       <div className="about-section h-[50vh] w-full relative">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-sky-800 opacity-20"></div>
         <div className="relative flex justify-center items-center h-full w-full">
           <h1 className="text-white text-4xl font-bold">About Us</h1>
         </div>
       </div>
+      {/* second section */}
       <div className="flex bg-white h-[30vh] w-full gap-3 justify-center items-center">
         <div className="w-[25%]">
           <h3 className="text-2xl text-center text-black font-bold">
@@ -33,6 +34,10 @@ function About() {
             atque in natus quisquam?
           </p>
         </div>
+      </div>
+      <div className="flex bg-white w-full h-[40vh] gap-[2%]">
+        <div className="sectionA w-[49%] shadow-custom-dark"></div>
+        <div className="sectionB w-[49%] shadow-custom-dark"></div>
       </div>
     </div>
   );

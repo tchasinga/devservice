@@ -19,3 +19,16 @@
   background-size: cover;
   background-position: center;
 }
+
+.sectionA {
+  background-image: url("./Components/Images/IT.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sectionB {
+  background-image: url("./Components/Images/Appdevelopment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
