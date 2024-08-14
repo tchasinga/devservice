@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
@@ -7,8 +7,8 @@ import SparklesText from "../../../app/Animation/magicui/SparklesText";
 
 // Function to generate a random color in hex format
 const getRandomColor = () => {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
+  const letters = "0123456789ABCDEF";
+  let color = "#";
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
@@ -41,7 +41,10 @@ export default function Heros() {
             <h1>We solve business</h1>
             <h1>Problems with</h1>
             <h1>
-                <SparklesText className="text-4xl md:text-5xl" text="Technology" />
+              <SparklesText
+                className="text-4xl md:text-5xl"
+                text="Technology"
+              />
             </h1>
           </div>
           <div className="my-5 text-slate-900 font-normal text-sm md:text-base">
@@ -64,9 +67,12 @@ export default function Heros() {
           <div className="w-full relative">
             <div
               className="w-[500px] h-[500px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
-              style={{ backgroundColor: bgColor, transition: 'background-color 1s ease' }}
+              style={{
+                backgroundColor: bgColor,
+                transition: "background-color 1s ease",
+              }}
             ></div>
-            <Image src={myImgIsadded} />
+            <Image src={myImgIsadded} alt="web services" />
           </div>
         </div>
       </div>

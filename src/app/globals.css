@@ -13,3 +13,9 @@
   backdrop-filter: blur(3px);
 }
 
+.about-section {
+  background-image: url("./Components/Images/webdevelopment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

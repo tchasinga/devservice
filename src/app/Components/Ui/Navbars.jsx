@@ -1,11 +1,20 @@
 "use client";
 import React from "react";
-import { useState } from "react"; 
+import { useState } from "react";
 import "../../globals.css";
 import Link from "next/link";
 import WordRotate from "../../../app/Animation/magicui/wordrotate";
 
-const words = ["Dev service", "Frontend", "Backend", "App dev", "Database", "Apis config", "Design", "Ui design"]
+const words = [
+  "Dev service",
+  "Frontend",
+  "Backend",
+  "App dev",
+  "Database",
+  "Apis config",
+  "Design",
+  "Ui design",
+];
 
 export default function Navbars() {
   const [open, setOpen] = useState(false);
@@ -24,7 +33,7 @@ export default function Navbars() {
       <div className="flex items-center justify-between">
         <div className="mx-7 w-[150px]">
           <h1 className="text-slate-800 text-2xl font-bold">
-            <WordRotate words={words}/>
+            <WordRotate words={words} />
           </h1>
         </div>
 

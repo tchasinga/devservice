@@ -4,6 +4,7 @@ import { cn } from "../../lib/utils.ts";
 import Navbars from "./Ui/Navbars";
 import Heros from "./Ui/Heros";
 
+
 export default function Keeper() {
   return (
     <div className="relative  min-h-screen w-full  overflow-hidden">
@@ -11,6 +12,7 @@ export default function Keeper() {
       <div className="">
         <Heros />
       </div>
+      
       <AnimatedGridPattern
         numSquares={230}
         maxOpacity={0.2}
