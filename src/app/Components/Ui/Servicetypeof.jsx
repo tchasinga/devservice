@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import AnimatedTooltipPreview from "../Ui/Tooltips";
-
+import myDataobject from '../Data/Services.js'
 
 export default function Servicetypeof() {
   return (
@@ -32,7 +32,15 @@ export default function Servicetypeof() {
         </div>
 
         {/* Displaying data  */}
-        
+        <div className="">
+            {
+                myDataobject.map((item) => {
+                    <div key={item.id} className="">
+                        <p>{item.MyIcons}</p>
+                    </div>
+                })
+            }
+        </div>
       </div>
     </div>
   );
