@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-blacking {
   background: rgba(255, 255, 255, 0.486);
   backdrop-filter: blur(3px);

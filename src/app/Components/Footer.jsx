@@ -6,26 +6,31 @@ function Footer() {
       <div className="flex flex-row gap-16 h-[30vh] w-[80%] justify-center">
         <div className="w-[25%] ">
           <h2 className="font-semibold">About Us</h2>
-          <p className="mt-5 font-light">
+          <p className="mt-1 font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
             pariatur in corporis!
           </p>
         </div>
         <div className="w-fit">
           <h2 className="font-semibold">Support</h2>
-          <ul className="mt-5">
+          <ul className="mt-1">
             <li>Q&A</li>
+            <li>Our service</li>
+            <li>
+              <a>Best services</a>
+            </li>
+            <li>Lorem</li>
             <li>Our service</li>
             <li>Blog</li>
           </ul>
         </div>
         <div className="w-fit">
           <h2 className="font-semibold">Get In Touch</h2>
-          <p className="mt-5 font-light">Lorem ipsum dolor sit amet.</p>
+          <p className="mt-1 font-light">Lorem ipsum dolor sit amet.</p>
         </div>
         <div className="w-[30%]">
           <h2 className="font-semibold">Subscribe Newsettler</h2>
-          <p className="mt-5 font-light">
+          <p className="mt-1 font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos ut
             perspiciatis.
           </p>
