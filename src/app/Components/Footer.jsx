@@ -36,7 +36,7 @@ function Footer() {
           </h2>
           <p className="mt-1 font-light font-poppins font-sans">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos ut
-            perspiciatis.
+            perspiciatis.adipisicing elit
           </p>
           <input
             type="text"
