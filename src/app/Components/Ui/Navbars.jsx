@@ -22,7 +22,6 @@ export default function Navbars() {
     { name: "Welcom", link: "#home" },
     { name: "About us", link: "#description" },
     { name: "Services", link: "#services" },
-    { name: "Our-works", link: "#theworks" },
     { name: "Apply-now", link: "../apply" },
     { name: "Contact", link: "#contact" },
   ];
