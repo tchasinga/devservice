@@ -48,7 +48,7 @@ export default function Servicetypeof() {
         </div>
 
         {/* Adding testimonials...*/}
-        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px]">
+        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px] padder">
           <h1>We made more than your expectation</h1>
           <p className="text-xs">Your imagination are your own limit</p>
         </div>

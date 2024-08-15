@@ -48,7 +48,7 @@ export default function Heros() {
               />
             </h1>
           </div>
-          <div className="my-5 text-slate-900 font-normal text-sm md:text-base">
+          <div className="my-5 text-slate-900 font-normal text-sm">
             <p>Our performance is your success, our passion is</p>
             <p>Innovation, our expertise is unmatched, we get you</p>
             <p>More</p>
