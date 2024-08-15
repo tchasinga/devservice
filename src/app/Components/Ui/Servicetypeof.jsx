@@ -8,14 +8,14 @@ export default function Servicetypeof() {
   return (
     <div className="min-h-screen max-w-screen-xl mx-auto w-full overflow-hidden" id="services">
       <div className="flex flex-col justify-center pt-[100px]">
-        <h1 className="text-slate-900 text-2xl font-bold">
+        <h1 className="text-slate-900 text-2xl font-bold smallerT">
           We provide solution on your bussness
           <hr className="mt-1 py-2 w-[150px]"/>
         </h1>
         
         <div className="flex items-center justify-around flex-wrap w-full">
             {/* Right index comments */}
-        <div className="flex flex-col justify-center text-slate-900 font-medium">
+        <div className="flex flex-col justify-center text-slate-900 font-medium smaller">
           <p>
             Our mission is to leverage cutting-edge technology to bring your
             vision to life.

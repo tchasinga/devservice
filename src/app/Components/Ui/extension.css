@@ -6,6 +6,19 @@
       justify-content: center;
       align-items: center;
     }
+
+    .smaller{
+      padding: 10px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .smallerT{
+      padding: 10px; 
+    }
+
   }
 
   .gridGeneral {
