@@ -12,8 +12,8 @@ function Footer() {
           </p>
         </div>
         <div className="w-fit">
-          <h2 className="font-semibold">Support</h2>
-          <ul className="mt-1">
+          <h2 className="font-semibold font-poppins font-sans">Support</h2>
+          <ul className="mt-1 font-poppins font-sans">
             <li>Q&A</li>
             <li>Our service</li>
             <li>
@@ -25,23 +25,27 @@ function Footer() {
           </ul>
         </div>
         <div className="w-fit">
-          <h2 className="font-semibold">Get In Touch</h2>
-          <p className="mt-1 font-light">Lorem ipsum dolor sit amet.</p>
+          <h2 className="font-semibold font-poppins font-sans">Get In Touch</h2>
+          <p className="mt-1 font-light font-poppins font-sans">
+            Lorem ipsum dolor sit amet.
+          </p>
         </div>
         <div className="w-[30%]">
-          <h2 className="font-semibold">Subscribe Newsettler</h2>
-          <p className="mt-1 font-light">
+          <h2 className="font-semibold font-poppins font-sans">
+            Subscribe Newsettler
+          </h2>
+          <p className="mt-1 font-light font-poppins font-sans">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos ut
             perspiciatis.
           </p>
           <input
             type="text"
             placeholder="Enter Email"
-            className="mt-3 h-[5vh] p-3 flex items-center w-[70%]"
+            className="mt-3 h-[5vh] p-3 flex items-center w-[70%] font-poppins font-sans"
           />
           <button
             type="button"
-            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex items-center w-[70%]"
+            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex items-center w-[70%] font-poppins font-sans"
           >
             Subscribe To NewSettlers
           </button>
@@ -49,7 +53,9 @@ function Footer() {
       </div>
       <div className="h-10px mb-0 w-full flex items-center flex-col">
         <div className="bg-white h-[0.3px] w-[100%]"></div>
-        <h3>@reserved rights Devservice</h3>
+        <h3 className="font-poppins font-sans m-3">
+          @reserved rights Devservice
+        </h3>
       </div>
     </div>
   );
