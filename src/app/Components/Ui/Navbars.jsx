@@ -15,6 +15,7 @@ const words = [
   "Design",
   "Ui design",
 ];
+console.log(words)
 export default function Navbars() {
   const [open, setOpen] = useState(false);
   const menuLinks = [
