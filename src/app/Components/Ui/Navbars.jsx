@@ -4,6 +4,7 @@ import { useState } from "react";
 import "../../globals.css";
 import Link from "next/link";
 import WordRotate from "../../../app/Animation/magicui/wordrotate";
+import fd from "../Ui/apply"
 
 const words = [
   "Dev service",
