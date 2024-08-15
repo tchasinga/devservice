@@ -50,11 +50,11 @@ function Footer() {
             <span className="font-semibold">Email:</span> Devservice@gmail.com{" "}
           </h4>
           <div className="flex flex-row gap-2 mt-3 font-[10px] text-base text-orange-500">
-            <FaFacebook className="hover:scale-125 hover:text-white" />
-            <FaInstagram className="hover:scale-125 hover:text-white" />
-            <FaLinkedin className="hover:scale-125 hover:text-white" />
-            <FaYoutube className="hover:scale-125 hover:text-white" />
-            <FaTwitter className="hover:scale-125 hover:text-white" />
+            <FaFacebook className="hover:scale-125 hover:text-white text-[20px]" />
+            <FaInstagram className="hover:scale-125 hover:text-white text-[20px]" />
+            <FaLinkedin className="hover:scale-125 hover:text-white text-[20px]" />
+            <FaYoutube className="hover:scale-125 hover:text-white text-[20px]" />
+            <FaTwitter className="hover:scale-125 hover:text-white text-[20px]" />
           </div>
         </div>
         <div className="w-[30%]">
