@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -42,6 +49,13 @@ function Footer() {
           <h4 className="font-poppins font-sans">
             <span className="font-semibold">Email:</span> Devservice@gmail.com{" "}
           </h4>
+          <div className="flex flex-row gap-2 mt-3 font-[10px] text-base text-orange-500">
+            <FaFacebook className="hover:scale-125 hover:text-white" />
+            <FaInstagram className="hover:scale-125 hover:text-white" />
+            <FaLinkedin className="hover:scale-125 hover:text-white" />
+            <FaYoutube className="hover:scale-125 hover:text-white" />
+            <FaTwitter className="hover:scale-125 hover:text-white" />
+          </div>
         </div>
         <div className="w-[30%]">
           <h2 className="font-semibold font-poppins font-sans">
@@ -67,7 +81,8 @@ function Footer() {
       <div className="h-10px mb-0 w-full flex items-center flex-col">
         <div className="bg-white h-[0.3px] w-[100%]"></div>
         <h3 className="font-poppins font-sans m-3">
-          all rights reserved @Devservice
+          all rights reserved{" "}
+          <span className="text-orange-500 font-bold">@Devservice</span>
         </h3>
       </div>
     </div>
