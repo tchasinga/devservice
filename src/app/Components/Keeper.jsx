@@ -7,7 +7,7 @@ import Heros from "./Ui/Heros";
 
 export default function Keeper() {
   return (
-    <div className="relative  min-h-screen w-full  overflow-hidden bg-fixed">
+    <div className="relative  min-h-screen w-full  overflow-hidden bg-fixed" id="home">
       <Navbars />
       <div className="">
         <Heros />
