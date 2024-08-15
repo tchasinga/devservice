@@ -16,20 +16,23 @@ function Team() {
       </div>
       <div className="w-[18%] h-[38vh] shadow-xl align-text-bottom">
         <div className=" Member1 w-full h-[30vh]"></div>
-        <div className=" mb-0 flex justify-center text-center items-center ">
-          <h4>Tracy Miranja</h4>
+        <div className=" mb-0 flex justify-center text-center items-center flex-col mt-1">
+          <h4 className="font-bold">Tracy Miranja</h4>
+          <p>Front-End developer</p>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
-        <div className=" Member2w-full h-[30vh]"></div>
-        <div className="flex justify-center">
-          <h4>Tchasinga Asiwaju</h4>
+        <div className=" Member2 w-full h-[30vh]"></div>
+        <div className="flex justify-center flex-col items-center mt-1 ">
+          <h4 className="font-bold">Tchasinga Asiwaju</h4>
+          <p>Full-stack Developer</p>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
         <div className=" Member3 w-full h-[30vh]"></div>
-        <div className="flex justify-center">
-          <h4>Oscar winrar</h4>
+        <div className="flex justify-center flex-col items-center mt-1">
+          <h4 className="font-bold">Oscar winrar</h4>
+          <p>Digital Marketor</p>
         </div>
       </div>
     </div>
