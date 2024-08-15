@@ -32,7 +32,7 @@ export default function Heros() {
 
   return (
     <div className="relative w-full py-[200px] px-4 md:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto onrespo">
+      <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto">
         {/* New first div */}
         <div className="flex flex-col justify-center text-center md:text-left">
           <p className="text-blue-950 font-semibold text-lg md:text-xl">
@@ -48,7 +48,7 @@ export default function Heros() {
               />
             </h1>
           </div>
-          <div className="my-5 text-slate-900 font-normal text-sm md:text-base">
+          <div className="my-5 text-slate-900 font-normal text-sm">
             <p>Our performance is your success, our passion is</p>
             <p>Innovation, our expertise is unmatched, we get you</p>
             <p>More</p>
@@ -64,10 +64,10 @@ export default function Heros() {
         </div>
 
         {/* Second div is here */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center myDirection">
           <div className="w-full relative">
             <div
-              className="w-[500px] h-[500px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
+              className="lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[300px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
               style={{
                 backgroundColor: bgColor,
                 transition: "background-color 1s ease",

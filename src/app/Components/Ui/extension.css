@@ -1,10 +1,28 @@
 
 @media only screen and (max-width: 468px) {
-    .onrespo {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
+
+    .smaller{
+      padding: 10px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .smallerT{
+      padding: 10px; 
+    }
+
+    .myDirection{
+      padding-top: 10%;
+    }
+
+    .gridGeneral{
+      padding: 10px;
+    }
+
+    .padder{
+      padding: 10px;
     }
   }
 

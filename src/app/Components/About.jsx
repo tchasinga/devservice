@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-black h-screen w-full">
+    <div className="bg-black h-screen w-full" id="description">
       <div className="about-section h-[30vh] w-full relative bg-fixed">
         <div className="absolute inset-0 bg-sky-800 opacity-20"></div>
         <div className="relative flex justify-center items-center h-full w-full">
