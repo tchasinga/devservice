@@ -15,19 +15,19 @@ function Team() {
         </button>
       </div>
       <div className="w-[18%] h-[38vh] shadow-xl align-text-bottom">
-        <div className="w-full h-[30vh]"></div>
-        <div className="mb-0 flex justify-center">
+        <div className=" Member1 w-full h-[30vh]"></div>
+        <div className=" mb-0 flex justify-center text-center items-center ">
           <h4>Tracy Miranja</h4>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
-        <div className="w-full h-[30vh]"></div>
+        <div className=" Member2w-full h-[30vh]"></div>
         <div className="flex justify-center">
           <h4>Tchasinga Asiwaju</h4>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
-        <div className="w-full h-[30vh]"></div>
+        <div className=" Member3 w-full h-[30vh]"></div>
         <div className="flex justify-center">
           <h4>Oscar winrar</h4>
         </div>

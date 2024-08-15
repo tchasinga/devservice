@@ -36,3 +36,23 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.Member1 {
+  background-image: url("./Components/Images/tracy.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Member2 {
+  background-image: url("./Components/Images/member2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Member3 {
+  background-image: url("./Components/Images/member3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
