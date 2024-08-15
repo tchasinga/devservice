@@ -64,7 +64,7 @@ export default function Heros() {
         </div>
 
         {/* Second div is here */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center myDirection">
           <div className="w-full relative">
             <div
               className="lg:w-[500px] lg:h-[500px] md:w-[300px] md:h-[300px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
