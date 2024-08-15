@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
@@ -34,7 +33,7 @@ export default function Heros() {
     <div className="relative w-full py-[200px] px-4 md:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-xl mx-auto onrespo">
         {/* New first div */}
-        <div className="flex flex-col justify-center text-center md:text-left">
+        <div className="flex flex-col justify-center text-center md:text-left lg:w-[40%] md:w-[73%]">
           <p className="text-blue-950 font-semibold text-lg md:text-xl">
             Welcome to dev service
           </p>
@@ -48,11 +47,14 @@ export default function Heros() {
               />
             </h1>
           </div>
-          <div className="my-5 text-slate-900 font-normal text-sm">
-            <p>Our performance is your success, our passion is</p>
-            <p>Innovation, our expertise is unmatched, we get you</p>
-            <p>More</p>
+          <div className="my-5 text-slate-900 font-normal text-sm md:text-base lg:text-lg  md:w-full">
+            <p className="">Our performance is your success, our passion is</p>
+            <p className="">
+              Innovation, our expertise is unmatched, we get you
+            </p>
+            <p className="">More</p>
           </div>
+
           <div className="flex flex-col md:flex-row items-center w-full gap-4">
             <div className="bg-blue-900 text-slate-300 p-4 cursor-pointer duration-500 flex justify-center items-center border w-full md:w-1/2">
               <p>Get started</p>
@@ -64,10 +66,10 @@ export default function Heros() {
         </div>
 
         {/* Second div is here */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center  md:relative md:left-[5%]">
           <div className="w-full relative">
             <div
-              className="w-[500px] h-[500px] top-[-3%] right-0 left-0 bottom-0 absolute z-[-9999] rounded-full"
+              className="lg:w-[500px] lg:h-[500px] top-[-3%]  absolute z-[-9999] rounded-full md:w-[300px] md:h-[300px]"
               style={{
                 backgroundColor: bgColor,
                 transition: "background-color 1s ease",
