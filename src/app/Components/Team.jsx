@@ -18,21 +18,21 @@ function Team() {
         <div className=" Member1 w-full h-[30vh]"></div>
         <div className=" mb-0 flex justify-center text-center items-center flex-col mt-1">
           <h4 className="font-bold">Tracy Miranja</h4>
-          <p>Full-stack developer</p>
+          <p className="font-poppins font-sans">Full-stack developer</p>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
         <div className=" Member2 w-full h-[30vh]"></div>
         <div className="flex justify-center flex-col items-center mt-1 ">
           <h4 className="font-bold">Tchasinga Asiwaju</h4>
-          <p>Full-stack Developer</p>
+          <p className="font-poppins font-sans">Full-stack Developer</p>
         </div>
       </div>
       <div className="w-[18%] h-[38vh] shadow-lg">
         <div className=" Member3 w-full h-[30vh]"></div>
         <div className="flex justify-center flex-col items-center mt-1">
           <h4 className="font-bold">Oscar winrar</h4>
-          <p>Digital Marketor</p>
+          <p className="font-poppins font-sans">Digital Marketor</p>
         </div>
       </div>
     </div>

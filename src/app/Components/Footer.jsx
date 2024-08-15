@@ -35,6 +35,13 @@ function Footer() {
           <p className="mt-1 font-light font-poppins font-sans">
             Lorem ipsum dolor sit amet.
           </p>
+          <h4 className="font-poppins font-sans mt-3">
+            <span className="font-semi-bold">Phone:</span>{" "}
+            +250787289028/+254769212978
+          </h4>
+          <h4 className="font-poppins font-sans">
+            <span className="font-semibold">Email:</span> Devservice@gmail.com{" "}
+          </h4>
         </div>
         <div className="w-[30%]">
           <h2 className="font-semibold font-poppins font-sans">
