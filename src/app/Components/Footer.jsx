@@ -10,18 +10,24 @@ function Footer() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
             pariatur in corporis!
           </p>
+          <h1 className=" font-poppins mt-2">
+            Dev
+            <span className="font-poppins font-sans text-orange-500 font-bold text-2xl">
+              Serves
+            </span>
+          </h1>
         </div>
         <div className="w-fit">
           <h2 className="font-semibold font-poppins font-sans">Support</h2>
           <ul className="mt-1 font-poppins font-sans">
-            <li>Q&A</li>
-            <li>Our service</li>
+            <li className="hover:text-orange-500">Q&A</li>
+            <li className="hover:text-orange-500">Our service</li>
             <li>
-              <a>Best services</a>
+              <a className="hover:text-orange-500">Best services</a>
             </li>
-            <li>Lorem</li>
-            <li>Our service</li>
-            <li>Blog</li>
+            <li className="hover:text-orange-500">Lorem</li>
+            <li className="hover:text-orange-500">Our service</li>
+            <li className="hover:text-orange-500">Blog</li>
           </ul>
         </div>
         <div className="w-fit">
@@ -45,7 +51,7 @@ function Footer() {
           />
           <button
             type="button"
-            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex items-center w-[70%] font-poppins font-sans"
+            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex items-center w-[70%] font-poppins font-sans hover:bg-orange-500"
           >
             Subscribe To NewSettlers
           </button>
@@ -54,7 +60,7 @@ function Footer() {
       <div className="h-10px mb-0 w-full flex items-center flex-col">
         <div className="bg-white h-[0.3px] w-[100%]"></div>
         <h3 className="font-poppins font-sans m-3">
-          @reserved rights Devservice
+          all rights reserved @Devservice
         </h3>
       </div>
     </div>
