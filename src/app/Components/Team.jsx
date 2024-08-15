@@ -10,13 +10,13 @@ function Team() {
         <p className="font-poppins font-sans">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <button className="font-poppins font-sans bg-blue-900 mt-3 p-2 rounded-md text-white">
+        <button className="font-poppins font-sans bg-blue-900 mt-3 p-2 rounded-md text-white hover:bg-inherit hover:text-black hover:outline-1 hover:shadow-md">
           About Team Members{" "}
         </button>
       </div>
-      <div className="w-[18%] h-[38vh] shadow-custom-dark"></div>
-      <div className="w-[18%] h-[38vh] shadow-custom-dark"></div>
-      <div className="w-[18%] h-[38vh] shadow-custom-dark"></div>
+      <div className="w-[18%] h-[38vh] shadow-lg"></div>
+      <div className="w-[18%] h-[38vh] shadow-lg"></div>
+      <div className="w-[18%] h-[38vh] shadow-lg"></div>
     </div>
   );
 }
