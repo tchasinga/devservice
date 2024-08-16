@@ -1,0 +1,6 @@
+@media only screen and (max-width: 769px) {
+  .second {
+    width: 25%;
+    height: 100vh;
+  }
+}
