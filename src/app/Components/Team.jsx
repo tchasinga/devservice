@@ -3,7 +3,7 @@ import React from "react";
 function Team() {
   return (
     <div className="w-[100%] h-fit flex flex-col gap-3 justify-center md:flex-row md:h-[40vh] mb-10">
-      <div className=" w-[100%] md:w-[18%] h-[30vh] pt-12 flex justify-center items-center flex-col">
+      <div className=" w-[100%] md:w-[18%] h-[30vh] pt-12 flex justify-center items-center flex-col md:justify-start md:items-start">
         <h1 className="font-poppins font-sans font-bold text-2xl">
           Meet Expert Team Members
         </h1>
