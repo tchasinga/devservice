@@ -9,6 +9,7 @@ import {
   uploadBytesResumable,
 } from "firebase/storage";
 import { app } from "../firebase.js";
+import { useRouter } from "next/navigation.js";
 
 export default function MultilineTextFields() {
   const [files, setFiles] = useState([]);
@@ -25,6 +26,7 @@ export default function MultilineTextFields() {
     description: "",
     imageUrls: [],
   });
+  const router = useRouter()
 
   // Adding image to the database
   const handlerImageSubmit = () => {
@@ -114,6 +116,7 @@ export default function MultilineTextFields() {
       if (data.success === true) {
         setError(data.message);
         console.log("Registration Successful:", data);
+        router.push('/')
         return;
       }
     } catch (error) {
