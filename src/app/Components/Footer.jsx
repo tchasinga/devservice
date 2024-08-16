@@ -9,8 +9,8 @@ import {
 
 function Footer() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center h-fit  md:h-[35vh] w-full bg-[#13265e] mt-5 text-white mb-0 pt-9">
-      <div className="flex gap-16 h-fit  md:h-[30vh] md:w-[80%] justify-center items-center flex-col md:flex-row ">
+    <div className="flex flex-col  justify-center items-center h-fit  md:h-fit w-full bg-[#13265e] mt-5 text-white mb-0 pt-4">
+      <div className="flex gap-16 h-fit  md:h-fit md:w-[80%] justify-center items-center flex-col md:flex-row  md:mb-10">
         <div className="w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col pr-10 pl-10">
           <h2 className="font-semibold">About Us</h2>
           <p className="mt-1 font-light text-center">
@@ -37,7 +37,7 @@ function Footer() {
             <li className="hover:text-orange-500">Blog</li>
           </ul>
         </div>
-        <div className=" w-[100%] h-fit md:w-fit flex justify-center items-center flex-col ">
+        <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col ">
           <h2 className="font-semibold font-poppins font-sans">Get In Touch</h2>
           <p className="mt-1 font-light font-poppins font-sans">
             Lorem ipsum dolor sit amet.
@@ -57,8 +57,8 @@ function Footer() {
             <FaTwitter className="hover:scale-125 hover:text-white text-[20px]" />
           </div>
         </div>
-        <div className="md:w-[30%] w-[100%] h-fit flex justify-center items-center flex-col p-10">
-          <h2 className="font-semibold font-poppins font-sans">
+        <div className="md:w-[30%] w-[100%] h-fit flex justify-center items-center flex-col p-10 md:p-0 md:h-fit">
+          <h2 className="font-semibold font-poppins font-sans text-center">
             Subscribe Newsettler
           </h2>
           <p className="mt-1 font-light font-poppins font-sans text-center">
@@ -72,9 +72,9 @@ function Footer() {
           />
           <button
             type="button"
-            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex items-center w-[70%] font-poppins font-sans hover:bg-orange-500"
+            className="bg-blue-600 rounded-md mt-3 h-[5vh] p-3 flex md:font-[5px] items-center w-[70%] font-poppins font-sans hover:bg-orange-500"
           >
-            Subscribe To NewSettlers
+            Subscribe
           </button>
         </div>
       </div>
