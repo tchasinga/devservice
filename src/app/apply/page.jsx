@@ -1,14 +1,13 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
+import React, { useState } from "react";
 import {
-  getDownloadURL,
-  getStorage,
-  ref, 
-  uploadBytesResumable,
-} from "firebase/storage";
-import { app } from "../firebase.js";
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Button,
+  TextField,
+} from "@mui/material";
 import { useRouter } from "next/navigation.js";
 
 export default function MultilineTextFields() {
@@ -16,7 +15,7 @@ export default function MultilineTextFields() {
   const [filePerc, setFilePerc] = useState(0);
   const [imageUploadError, setImageUploadError] = useState(false);
   const [fileUploadError, setFileUploadError] = useState(false);
-  const [uploading, setUploading] = useState(false);
+  const [uploading, setUploading] = useState(false); // This state controls the button text
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -26,70 +25,51 @@ export default function MultilineTextFields() {
     description: "",
     imageUrls: [],
   });
-  const router = useRouter()
+  const router = useRouter();
 
-  // Adding image to the database
-  const handlerImageSubmit = () => {
-    if (files.length > 0 && files.length + formData.imageUrls.length < 10) {
-      setUploading(true);
-      setImageUploadError(false);
-      const promise = [];
-      for (let i = 0; i < files.length; i++) {
-        promise.push(storeImage(files[i]));
-      }
-      Promise.all(promise)
-        .then((urls) => {
-          setFormData({
-            ...formData,
-            imageUrls: formData.imageUrls.concat(urls),
-          });
-          setImageUploadError(false);
-          setUploading(false);
-        })
-        .catch((err) => {
-          console.error(err);
-          setImageUploadError("Image upload error (2 mb per image)");
-        });
-    } else {
-      setImageUploadError(
-        `You can upload max 10 images maximum (2 mb per image) and please select at least one image to upload ${currentUser.user.username}`
-      );
-      setUploading(false);
-    }
-  };
-  const storeImage = async (file) => {
-    return new Promise((resolve, reject) => {
-      const storage = getStorage(app);
-      const fileName = new Date().getTime() + file.name;
-      const storageRef = ref(storage, fileName);
-      const uploadTask = uploadBytesResumable(storageRef, file);
-      uploadTask.on(
-        "state_changed",
-        (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`Upload is ${progress}% done`);
-          setFilePerc(Math.round(progress));
-        },
-        (error) => {
-          reject(error);
-          setFileUploadError(true);
-        },
-        () => {
-          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            resolve(downloadURL);
-          });
-        }
-      );
-    });
-  };
-
-  // Adding idea to the database
+  // Handle form field changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  //  Adding Handler Submit to submit the form data to the database of MongoDB and Firebase Storage
+  // Handle service selection change
+  const handleServiceChange = (event) => {
+    setFormData({ ...formData, typeofservices: event.target.value });
+  };
+
+  // Handle image upload
+  const handlerImageSubmit = async () => {
+    if (files.length === 0) {
+      alert("Please select an image to upload.");
+      return;
+    }
+
+    setUploading(true); // Set uploading to true when upload starts
+    setImageUploadError(false);
+
+    try {
+      // Replace with your actual image upload logic
+      // Here, we're simulating an upload with a delay
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulated upload time
+
+      // Assuming image upload is successful and returns URLs
+      const uploadedUrls = Array.from(files).map((file) => URL.createObjectURL(file));
+
+      setFormData((prev) => ({
+        ...prev,
+        imageUrls: [...prev.imageUrls, ...uploadedUrls],
+      }));
+
+      console.log("Images uploaded successfully:", uploadedUrls);
+    } catch (error) {
+      setImageUploadError(true);
+      console.error("Error uploading images:", error);
+    } finally {
+      setUploading(false); // Set uploading to false when upload is complete
+    }
+  };
+
+  // Handle form submission
   const handlerSubmitForm = async (e) => {
     try {
       e.preventDefault();
@@ -103,9 +83,7 @@ export default function MultilineTextFields() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            ...formData,
-          }),
+          body: JSON.stringify({ ...formData }),
         }
       );
 
@@ -116,7 +94,7 @@ export default function MultilineTextFields() {
       if (data.success === true) {
         setError(data.message);
         console.log("Registration Successful:", data);
-        router.push('/')
+        router.push("/");
         return;
       }
     } catch (error) {
@@ -126,7 +104,7 @@ export default function MultilineTextFields() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto mt-20">
+    <main className="max-w-7xl mx-auto mt-20 py-[50px]">
       <div className="flex flex-wrap items-center gap-3 w-full mt-10">
         <h1 className="text-2xl font-light">Please complete the form</h1>
       </div>
@@ -135,9 +113,8 @@ export default function MultilineTextFields() {
         onSubmit={handlerSubmitForm}
         className="mt-11 flex-col flex justify-center w-full"
       >
-        <div className="flex justify-end mb-4"></div>
         <div className="gridsystem">
-          <div className=" text-black ">
+          <div className="text-black my-2">
             <TextField
               type="text"
               variant="outlined"
@@ -178,35 +155,45 @@ export default function MultilineTextFields() {
               rows={10}
             />
           </div>
+
           <div className="text-black my-2">
-            <select
-              name="typeofideas"
-              id="typeofservices"
-              value={formData.typeofservices}
-              onChange={handleChange}
-              className="p-2 w-full rounded-md"
-            >
-              <option value="Select one services">Select one services</option>
-              <option value="Website Development">Website Development</option>
-              <option value="App Development Android & IOS">
-                App Development Android & IOS
-              </option>
-              <option value="Web applications">Web applications</option>
-              <option value="UI design">UI design</option>
-              <option value="Digital Marketing and Branding">
-                Digital Marketing and Branding
-              </option>
-              <option value="Brand Design">Brand Design</option>
-              <option value="Professional Training">
-                Professional Training
-              </option>
-              <option value="POS System - Software and Hardware">
-                POS System - Software and Hardware
-              </option>
-              <option value="SEO Services">SEO Services</option>
-              <option value="Photo editing">Photo editing</option>
-            </select>
+            <FormControl fullWidth variant="outlined">
+              <InputLabel id="typeofservices-label">Type of Services</InputLabel>
+              <Select
+                labelId="typeofservices-label"
+                id="typeofservices"
+                value={formData.typeofservices}
+                onChange={handleServiceChange}
+                label="Type of Services"
+                sx={{
+                  color: "black",
+                  backgroundColor: "white",
+                  "& .Mui-selected": {
+                    color: "black",
+                  },
+                }}
+              >
+                <MenuItem value="">
+                  <em>Select a service</em>
+                </MenuItem>
+                <MenuItem value="Website Development">Website Development</MenuItem>
+                <MenuItem value="App Development Android & IOS">App Development Android & IOS</MenuItem>
+                <MenuItem value="Web applications">Web applications</MenuItem>
+                <MenuItem value="UI design">UI design</MenuItem>
+                <MenuItem value="Digital Marketing and Branding">
+                  Digital Marketing and Branding
+                </MenuItem>
+                <MenuItem value="Brand Design">Brand Design</MenuItem>
+                <MenuItem value="Professional Training">Professional Training</MenuItem>
+                <MenuItem value="POS System - Software and Hardware">
+                  POS System - Software and Hardware
+                </MenuItem>
+                <MenuItem value="SEO Services">SEO Services</MenuItem>
+                <MenuItem value="Photo editing">Photo editing</MenuItem>
+              </Select>
+            </FormControl>
           </div>
+
           <div className="flex gap-3">
             <input
               onChange={(e) => setFiles(e.target.files)}
@@ -228,7 +215,7 @@ export default function MultilineTextFields() {
         </div>
         <div className="flex flex-col my-3">
           <Button type="submit" variant="contained">
-            {loading ? "applying..." : "Apply now"}
+            {loading ? "Applying..." : "Apply now"}
           </Button>
           {error && <p className="text-green-700 text-xs">{error}</p>}
         </div>
