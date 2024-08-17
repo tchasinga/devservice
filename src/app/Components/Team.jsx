@@ -8,7 +8,8 @@ function Team() {
           Meet Expert Team Members
         </h1>
         <p className="font-poppins font-sans">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          passionate professionals driven by innovation, dedicated to delivering
+          top-tier IT solutions that transform your vision into reality
         </p>
         <button className="font-poppins font-sans bg-blue-900 shadow-lg mt-3 p-2 rounded-md text-white hover:bg-orange-500 hover:text-black hover:outline-1 hover:shadow-md">
           About Team Members{" "}

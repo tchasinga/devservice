@@ -14,8 +14,9 @@ function Footer() {
         <div className="w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col ">
           <h2 className="font-semibold">About Us</h2>
           <p className="mt-1 font-light text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            pariatur in corporis!
+            We are a dynamic IT solutions company dedicated to turning your
+            ideas into reality.
+            <a className="text-orange-500 hover:text-white">Read more...</a>
           </p>
           <h1 className=" font-poppins mt-2">
             Dev
@@ -28,19 +29,19 @@ function Footer() {
           <h2 className="font-semibold font-poppins font-sans">Support</h2>
           <ul className="mt-1 font-poppins font-sans">
             <li className="hover:text-orange-500">Q&A</li>
-            <li className="hover:text-orange-500">Our service</li>
+            <li className="hover:text-orange-500">Testimonials</li>
             <li>
-              <a className="hover:text-orange-500">Best services</a>
+              <a className="hover:text-orange-500">Blog</a>
             </li>
-            <li className="hover:text-orange-500">Lorem</li>
+            <li className="hover:text-orange-500">Events & Webinars</li>
             <li className="hover:text-orange-500">Our service</li>
-            <li className="hover:text-orange-500">Blog</li>
+            <li className="hover:text-orange-500">Portfolio</li>
           </ul>
         </div>
         <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col ">
           <h2 className="font-semibold font-poppins font-sans">Get In Touch</h2>
-          <p className="mt-1 font-light font-poppins font-sans">
-            Lorem ipsum dolor sit amet.
+          <p className="mt-1 font-light font-poppins font-sans text-center">
+            Get in touch with us today!
           </p>
           <h4 className="font-poppins font-sans mt-3">
             <span className="font-semi-bold">Phone:</span>{" "}
@@ -62,8 +63,8 @@ function Footer() {
             Subscribe Newsettler
           </h2>
           <p className="mt-1 font-light font-poppins font-sans text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos ut
-            perspiciatis.adipisicing elit
+            Stay updated with the latest in IT innovations, expert tips, and
+            exclusive offers by subscribing to our newsletter.
           </p>
           <input
             type="text"
