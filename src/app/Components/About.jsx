@@ -16,27 +16,31 @@ function About() {
       <div className="second flex bg-white h-fit sm:h-[30vh] w-full gap-5 justify-center flex-col items-center sm:flex-row lg:h-fit">
         <div className="w-[90%] h-fit mt-4 md:w-[25%]">
           <h3 className="text-2xl text-center text-slate-900 font-poppins font-sans font-bold sm:text-blue-600">
-            Society Where There Is Understanding
+            Where innovation meets excellence in the digital realm
           </h3>
         </div>
         <div className=" w-[90%] p-2 md:w-[30%] md:h-fit">
           <p className="font-poppins font-sans">
             <span className="text-blue-950 font-poppins font-sans font-bold text-2xl text-medium">
-              L
+              W
             </span>
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            pariatur aliquid eveniet nesciunt? Mollitia doloremque, velit sed
-            nihil suscipit rem est temporibus libero, accusantium aperiam ipsam
-            sequi earum. Exercitationem, et!
+            e are a dynamic IT solutions company dedicated to turning your ideas
+            into reality. Whether you need cutting-edge web development,
+            seamless app experiences, or stunning UI designs that captivate
+            users, our team of experts is here to deliver. But that’s not
+            all—our services extend beyond development. We empower your brand
+            through
           </p>
         </div>
         <div className="w-[90%] p-2 md:w-[30%] md:h-fit">
           {" "}
           <p className="font-poppins font-sans">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            nesciunt id amet provident vitae accusamus maiores. Perferendis
-            quidem quas expedita consequatur, voluptatum alias magni at sit
-            atque in natus quisquam?
+            strategic digital marketing and branding, ensuring you stand out in
+            a crowded market. Plus, our professional training programs equip
+            your team with the skills needed to thrive in today’s tech-driven
+            world. At DevService we don’t just offer services; we create lasting
+            partnerships that drive your business forward. Choose us, and let’s
+            build something extraordinary together.
           </p>
         </div>
       </div>
