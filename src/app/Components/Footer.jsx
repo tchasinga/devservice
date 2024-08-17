@@ -11,9 +11,9 @@ function Footer() {
   return (
     <div className="flex flex-col  justify-center items-center h-fit  md:h-fit w-full bg-[#13265e] mt-5 text-white mb-0 pt-4">
       <div className="flex gap-16 h-fit  md:h-fit md:w-[80%] justify-center items-center flex-col md:flex-row  md:mb-10">
-        <div className="w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col ">
+        <div className="w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col md:items-start">
           <h2 className="font-semibold">About Us</h2>
-          <p className="mt-1 font-light text-center">
+          <p className="mt-1 font-light text-center md:text-start">
             We are a dynamic IT solutions company dedicated to turning your
             ideas into reality.
             <a className="text-orange-500 hover:text-white">Read more...</a>
@@ -25,9 +25,11 @@ function Footer() {
             </span>
           </h1>
         </div>
-        <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col">
-          <h2 className="font-semibold font-poppins font-sans">Support</h2>
-          <ul className="mt-1 font-poppins font-sans text-center">
+        <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col md:items-start">
+          <h2 className="font-semibold font-poppins font-sans md:text-start md:justify-start">
+            Support
+          </h2>
+          <ul className="mt-1 font-poppins font-sans text-center md:text-start">
             <li className="hover:text-orange-500">Q&A</li>
             <li className="hover:text-orange-500">Testimonials</li>
             <li>
@@ -38,8 +40,10 @@ function Footer() {
             <li className="hover:text-orange-500">Portfolio</li>
           </ul>
         </div>
-        <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col ">
-          <h2 className="font-semibold font-poppins font-sans">Get In Touch</h2>
+        <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center md:items-start flex-col ">
+          <h2 className="font-semibold font-poppins font-sans ">
+            Get In Touch
+          </h2>
           <p className="mt-1 font-light font-poppins font-sans text-center">
             Get in touch with us today!
           </p>
@@ -58,11 +62,11 @@ function Footer() {
             <FaTwitter className="hover:scale-125 hover:text-white text-[20px]" />
           </div>
         </div>
-        <div className="md:w-[30%] w-[100%] h-fit flex justify-center items-center flex-col p-10 md:p-0 md:h-fit">
+        <div className="md:w-[30%] w-[100%] h-fit flex justify-center items-center md:items-start flex-col p-10 md:p-0 md:h-fit">
           <h2 className="font-semibold font-poppins font-sans text-center">
             Subscribe Newsettler
           </h2>
-          <p className="mt-1 font-light font-poppins font-sans text-center">
+          <p className="mt-1 font-light font-poppins font-sans text-center md:text-start">
             Stay updated with the latest in IT innovations, expert tips, and
             exclusive offers by subscribing to our newsletter.
           </p>
