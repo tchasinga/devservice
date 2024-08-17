@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <div className=" w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col">
           <h2 className="font-semibold font-poppins font-sans">Support</h2>
-          <ul className="mt-1 font-poppins font-sans">
+          <ul className="mt-1 font-poppins font-sans text-center">
             <li className="hover:text-orange-500">Q&A</li>
             <li className="hover:text-orange-500">Testimonials</li>
             <li>
