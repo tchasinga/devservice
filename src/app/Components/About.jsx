@@ -13,7 +13,7 @@ function About() {
         </div>
       </div>
       {/* second section */}
-      <div className="second flex bg-white h-fit md:h-[30vh] w-[100%] gap-5 justify-center flex-col items-center md:flex-row lg:h-fit">
+      <div className="flex bg-white h-fit md:h-[30vh] w-[100%] gap-5 justify-center flex-col items-center md:flex-row lg:h-fit">
         <div className="w-[90%] h-fit mt-4 md:w-[25%]">
           <h3 className="text-2xl text-center text-slate-900 font-poppins font-sans font-bold sm:text-blue-600">
             Where innovation meets excellence in the digital realm
