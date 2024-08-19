@@ -1,5 +1,11 @@
-
 @media only screen and (max-width: 468px) {
+
+  .onrespo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
 
     .smaller{
       padding: 10px;
@@ -24,10 +30,12 @@
     .padder{
       padding: 10px;
     }
-  }
 
-  .gridGeneral {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    grid-gap: 5px;
   }
+}
+
+.gridGeneral {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 5px;
+}
