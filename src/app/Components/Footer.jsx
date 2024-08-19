@@ -9,6 +9,7 @@ import {
 
 function Footer() {
   return (
+
     <div className="flex flex-col  justify-center items-center h-fit  md:h-fit w-full bg-[#13265e] mt-5 text-white mb-0 pt-4">
       <div className="flex gap-16 h-fit  md:h-fit md:w-[80%] justify-center items-center flex-col md:flex-row  md:mb-10">
         <div className="w-[100%] h-fit md:w-[25%] flex justify-center items-center flex-col md:items-start">

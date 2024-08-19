@@ -6,14 +6,16 @@ import MarqueeDemo from "../Ui/MarqueeDemo";
 
 export default function Servicetypeof() {
   return (
-    <div className="min-h-screen max-w-screen-xl mx-auto w-full overflow-hidden">
+    <div className="min-h-screen max-w-screen-xl mx-auto w-full overflow-hidden" id="services">
       <div className="flex flex-col justify-center pt-[100px]">
+
         <h1 className="text-slate-900 text-2xl font-bold">
-          We provide solution on your business
+          We provide solution to your business
           <hr className="mt-1 py-2 w-[150px]" />
         </h1>
 
         <div className="flex items-center justify-around flex-wrap w-full">
+<
           {/* Right index comments */}
           <div className="flex flex-col justify-center text-slate-900 font-medium">
             <p>
@@ -25,6 +27,7 @@ export default function Servicetypeof() {
               and user-friendly interface.
             </p>
           </div>
+
 
           {/* Left index comments */}
           <div className="">
@@ -55,7 +58,7 @@ export default function Servicetypeof() {
         </div>
 
         {/* Adding testimonials...*/}
-        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px]">
+        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px] padder">
           <h1>We made more than your expectation</h1>
           <p className="text-xs">Your imagination are your own limit</p>
         </div>
