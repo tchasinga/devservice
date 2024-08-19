@@ -11,13 +11,13 @@ export default function Servicetypeof() {
       id="services"
     >
       <div className="flex flex-col justify-center pt-[100px]">
-        <h1 className="text-slate-900 text-2xl font-bold text-center">
+        <h1 className="text-slate-900 text-2xl font-bold text-center md:text-start">
           We provide solution to your business
           <hr className="mt-1 py-2 w-[150px]" />
         </h1>
 
         <div className="flex items-center justify-around flex-wrap w-full">
-          <div className="flex flex-col justify-center text-slate-900 font-medium text-center">
+          <div className="flex flex-col justify-center text-slate-900 font-medium text-center md:text-start">
             <p>
               Our mission is to leverage cutting-edge technology to bring your
               vision to life.
@@ -57,7 +57,7 @@ export default function Servicetypeof() {
         </div>
 
         {/* Adding testimonials...*/}
-        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px] padder">
+        <div className="text-slate-900 text-2xl justify-center flex-col flex py-[20px] padder text-center md:text-start">
           <h1>We made more than your expectation</h1>
           <p className="text-xs">Your imagination are your own limit</p>
         </div>
