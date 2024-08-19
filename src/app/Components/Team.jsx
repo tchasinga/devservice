@@ -7,7 +7,7 @@ function Team() {
         <h1 className="font-poppins font-sans font-bold text-2xl">
           Meet Expert Team Members
         </h1>
-        <p className="font-poppins font-sans">
+        <p className="font-poppins font-sans text-center p-4 pb-0 pt-0 md:text-start md:p-0">
           passionate professionals driven by innovation, dedicated to delivering
           top-tier IT solutions that transform your vision into reality
         </p>
