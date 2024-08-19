@@ -11,13 +11,13 @@ export default function Servicetypeof() {
       id="services"
     >
       <div className="flex flex-col justify-center pt-[100px]">
-        <h1 className="text-slate-900 text-2xl font-bold">
+        <h1 className="text-slate-900 text-2xl font-bold text-center">
           We provide solution to your business
           <hr className="mt-1 py-2 w-[150px]" />
         </h1>
 
         <div className="flex items-center justify-around flex-wrap w-full">
-          <div className="flex flex-col justify-center text-slate-900 font-medium">
+          <div className="flex flex-col justify-center text-slate-900 font-medium text-center">
             <p>
               Our mission is to leverage cutting-edge technology to bring your
               vision to life.
