@@ -4,24 +4,24 @@ import projectmanager from "../Data/Upworks";
 import Image from "next/image";
 
 export default function Website() {
-  const [changeNameWhileIsHover, setChangeNameWhileIsHover] = useState("Live");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const techStackToArray = (techStack) => {
     return techStack ? techStack.split(", ") : [];
   };
 
-  const handleMouseOver = () => {
-    setChangeNameWhileIsHover("Just click");
+  const handleMouseOver = (index) => {
+    setHoveredIndex(index);
   };
 
   const handleMouseLeave = () => {
-    setChangeNameWhileIsHover("Live");
+    setHoveredIndex(null);
   };
 
   return (
     <div>
       <div className="gridGeneralY">
-        {projectmanager.slice(0, 5).map((item) => (
+        {projectmanager.slice(0, 5).map((item, index) => (
           <div key={item.id} className="flex-col flex justify-center items-center">
             <div className="w-full h-full flex justify-center my-3">
               <Image
@@ -41,9 +41,9 @@ export default function Website() {
                 <p className="line-clamp-3">{item.details}</p>
               </div>
               <div className="flex flex-wrap justify-start items-start gap-2">
-                {techStackToArray(item.techStack).map((tech, index) => (
+                {techStackToArray(item.techStack).map((tech, techIndex) => (
                   <span
-                    key={index}
+                    key={techIndex}
                     className="mr-2 bg-slate-200 text-slate-800 px-4 text-sm py-1 rounded-md"
                   >
                     {tech}
@@ -53,12 +53,12 @@ export default function Website() {
 
               <div className="flex justify-end items-end">
                 <div
-                  onMouseOver={handleMouseOver}
+                  onMouseOver={() => handleMouseOver(index)}
                   onMouseLeave={handleMouseLeave}
                   className="flex justify-center items-center font-semibold hover:text-white bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer"
                 >
                   <a href={item.live} className="w-full text-center">
-                    {changeNameWhileIsHover}
+                    {hoveredIndex === index ? "Just click" : "Live"}
                   </a>
                 </div>
               </div>
