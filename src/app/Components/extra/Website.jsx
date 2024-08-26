@@ -28,9 +28,7 @@ export default function Website() {
                 src={item.image}
                 alt={item.title}
                 layout="responsive"
-                width={500}
-                height={300}
-                className="rounded-lg"
+                className=""
               />
             </div>
             <div className="flex flex-col justify-center ">

@@ -23,6 +23,14 @@ const  projectmanager = [
       },
       {
         id: 2,
+        title: "Essica car pet cleaning",
+        image: essicacarpetcleaning,
+        details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
+        techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
+        live: "https://essicacarpetcleaning.com",
+      }, 
+      {
+        id: 3,
         title: "Fitness room",
         image: Fitnessroom,
         details:
@@ -32,7 +40,7 @@ const  projectmanager = [
         source: "https://github.com/tchasinga/gym-rooms",
       },
       {
-        id: 3,
+        id: 4,
         title: "React-native",
         image: Reactnative,
         details: "React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces. Use a little—or a lot. You can use React Native today in your existing Android and iOS projects or you can create a whole new app from scratch.",
@@ -41,7 +49,7 @@ const  projectmanager = [
         source: "https://github.com/tchasinga/native-present"
       },
       {
-        id: 4,
+        id: 5,
         title: "Single-pages",
         image: Singlepages,
         details: "building server-rendered applications. While it&apos;s often used for server-side rendering, it can also be used to create single-page applications (SPAs) with client-side rendering. Here&apos;s a brief overview of how to create a single-page application using Next.js",
@@ -49,14 +57,6 @@ const  projectmanager = [
         live: "https://masingle-pages.netlify.app",
         source: "https://github.com/tchasinga/single-page"
       },
-      {
-        id: 5,
-        title: "Essica car pet cleaning",
-        image: essicacarpetcleaning,
-        details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
-        techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
-        live: "https://essicacarpetcleaning.com",
-      }, 
       {
         id: 6,
         title: "Blogs sharing",
