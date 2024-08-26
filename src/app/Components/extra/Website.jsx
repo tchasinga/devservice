@@ -1,11 +1,18 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import projectmanager from "../Data/Upworks";
 import Image from "next/image";
 
 export default function Website() {
+  const [changeNameWhileisHover, setChangeNameWhileisHover] = useState('Live')
+ 
   const techStackToArray = (techStack) => {
     return techStack ? techStack.split(", ") : [];
   };
+
+const getStateWhenIshover = () => {
+  setChangeNameWhileisHover('Just click');
+}
 
   return (
     <div>
@@ -38,9 +45,9 @@ export default function Website() {
                 </div>
 
                 <div className="flex justify-end items-end ">
-                  <div className="flex justify-center items-center font-semibold hover:text-white  bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer">
+                  <div onMouseOver={getStateWhenIshover}  className="flex justify-center items-center font-semibold hover:text-white  bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer">
                     <a href={item.live} className="">
-                      Live
+                      {changeNameWhileisHover}
                     </a>
                   </div>
                 </div>
