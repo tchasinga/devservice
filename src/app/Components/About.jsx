@@ -3,7 +3,7 @@ import "./Ui/about.css";
 
 function About() {
   return (
-    <div className="bg-black h-fit w-[100%]">
+    <div className="bg-black h-fit w-[100%] ">
       <div className="about-section h-[30vh] w-full relative bg-fixed">
         <div className="absolute inset-0 bg-sky-800 opacity-20"></div>
         <div className="relative flex justify-center items-center h-full w-full">
@@ -13,7 +13,7 @@ function About() {
         </div>
       </div>
       {/* second section */}
-      <div className="flex bg-white h-fit md:h-[30vh] w-[100%] gap-5 justify-center flex-col items-center md:flex-row lg:h-fit">
+      <div className="flex bg-white h-fit md:h-[30vh] w-[100%] gap-5 justify-center flex-col items-center md:flex-row lg:h-fit py-[5%]">
         <div className="w-[90%] h-fit mt-4 md:w-[25%]">
           <h3 className="text-2xl text-center text-slate-900 font-poppins font-sans font-bold sm:text-blue-600">
             Where innovation meets excellence in the digital realm

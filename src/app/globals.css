@@ -56,3 +56,47 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after,
+.underline-animation:active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.gridGeneralY {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 35px;
+}
