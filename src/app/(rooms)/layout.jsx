@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { name: "WebApplication", href: "/webapplication" },
+  { name: "Web application", href: "/webapplication" },
   { name: "Website", href: "/website" },
   { name: "Mobile", href: "/mobile" },
   { name: "Photo", href: "/photo" },
@@ -22,8 +22,10 @@ export default function AuthLayout({ children }) {
           return (
             <Link href={link.href} key={link.name}>
               <p
-                className={`cursor-pointer mr-3 ${
-                  isActive ? "font-bold" : "text-blue-600"
+                className={`cursor-pointer mr-3 text-xl font-normal transition-all duration-300 ${
+                  isActive
+                    ? "font-bold text-blue-800 underline-animation"
+                    : "text-slate-900"
                 }`}
               >
                 {link.name}
