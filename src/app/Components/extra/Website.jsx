@@ -55,7 +55,7 @@ export default function Website() {
                   onMouseLeave={handleMouseLeave}
                   className="flex justify-center items-center font-semibold hover:text-white bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer"
                 >
-                  <a href={item.live} className="w-full text-center">
+                  <a href={item.live} className="w-full text-center" target="_blank">
                     {hoveredIndex === index ? "Just click" : "Live"}
                   </a>
                 </div>
