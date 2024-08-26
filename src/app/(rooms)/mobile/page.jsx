@@ -1,9 +1,10 @@
 import React from 'react'
+import Mobiled from '../../Components/extra/Mobiled'
 
 export default function page() {
   return (
     <div>
-        <h1>Mobile</h1>
+        <Mobiled/>
     </div>
   )
 }
