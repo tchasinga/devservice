@@ -45,7 +45,7 @@ const  projectmanager = [
         title: "Single-pages",
         image: Singlepages,
         details: "building server-rendered applications. While it&apos;s often used for server-side rendering, it can also be used to create single-page applications (SPAs) with client-side rendering. Here&apos;s a brief overview of how to create a single-page application using Next.js",
-        techStack: "Nextjs, Apis, TailwindCss, Framer-motions,",
+        techStack: "Nextjs, Apis, TailwindCss, Framer-motions",
         live: "https://masingle-pages.netlify.app",
         source: "https://github.com/tchasinga/single-page"
       },
