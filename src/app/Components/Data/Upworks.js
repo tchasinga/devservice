@@ -9,6 +9,7 @@ import BlogsSharing from "../Balance/newScreenget.png";
 import LandEstate from "../Balance/Screenshot.png";
 import Stuffseller from "../Balance/ScreenshotStuff.png";
 import MessageApp from "../Balance/TchatAppKozeri.png";
+import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
 
  export const  ProjectManager = [
     {
