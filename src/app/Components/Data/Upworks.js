@@ -4,7 +4,6 @@ import Fitnessroom from "../Balance/crops.png";
 import workoursmanagement from "../Balance/DesignFive.png";
 import Reactnative from "../Balance/LearningNative.png";
 import Magazineshopping from "../Balance/magazineStuff.png";
-
 import BlogsSharing from "../Balance/newScreenget.png";
 import LandEstate from "../Balance/Screenshot.png";
 import Stuffseller from "../Balance/ScreenshotStuff.png";
