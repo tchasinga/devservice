@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import projectmanager from "../Data/mobiledater";
+import mobiledater from "../Data/mobiledater";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -18,7 +18,7 @@ export default function Mobiled() {
   return (
     <div>
       <div className="gridGeneralY">
-        {projectmanager.slice(5,10).map((item, index) => (
+        {mobiledater.slice(0).map((item, index) => (
           <motion.div
             key={item.id}
             className="flex-col flex justify-center items-center"
@@ -26,7 +26,7 @@ export default function Mobiled() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: index * 0.5 }}
           >
-            <div className="w-full h-full flex justify-center my-3">
+            <div className="w-[50%] flex justify-center my-3">
               <Image
                 src={item.myimage}
                 alt={item.title}
