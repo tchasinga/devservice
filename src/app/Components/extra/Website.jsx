@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import projectmanager from "../Data/Upworks";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Website() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -22,7 +23,13 @@ export default function Website() {
     <div>
       <div className="gridGeneralY">
         {projectmanager.slice(0, 5).map((item, index) => (
-          <div key={item.id} className="flex-col flex justify-center items-center">
+          <motion.div
+            key={item.id}
+            className="flex-col flex justify-center items-center"
+            initial={{ opacity: -0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: index * 0.5 }}
+          >
             <div className="w-full h-full flex justify-center my-3">
               <Image
                 src={item.image}
@@ -31,7 +38,7 @@ export default function Website() {
                 className=""
               />
             </div>
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col justify-center">
               <div className="my-1 flex text-xl text-slate-900 font-bold">
                 <h1>{item.title}</h1>
               </div>
@@ -50,18 +57,20 @@ export default function Website() {
               </div>
 
               <div className="flex justify-end items-end">
-                <div
+                <motion.div
                   onMouseOver={() => handleMouseOver(index)}
                   onMouseLeave={handleMouseLeave}
                   className="flex justify-center items-center font-semibold hover:text-white bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
                 >
                   <a href={item.live} className="w-full text-center" target="_blank">
                     {hoveredIndex === index ? "Just click" : "Live"}
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
