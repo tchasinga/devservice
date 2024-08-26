@@ -25,7 +25,7 @@ const  projectmanager = [
         id: 2,
         title: "Essica car pet cleaning",
         image: essicacarpetcleaning,
-        details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
+        details: "Car pet cleaning ensures your vehicle stays fresh and free of pet hair, odors, and stains. Regular cleaning helps maintain a healthy environment for both you and your furry friend. Specialized tools and pet-safe products effectively remove dirt and allergens. Professional car pet cleaning services offer deep cleaning for stubborn messes. Keep your car looking and smelling great, even with pets on board!",
         techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
         live: "https://essicacarpetcleaning.com",
       }, 
