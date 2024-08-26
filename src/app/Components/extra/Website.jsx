@@ -37,8 +37,8 @@ export default function Website() {
                   ))}
                 </div>
 
-                <div className="flex justify-end items-end">
-                  <div className="flex justify-center items-center cursor-pointer font-semibold hover:text-green-700 duration-700 bg-slate-200 p-2 mt-2 rounded-xl w-[40%]">
+                <div className="flex justify-end items-end ">
+                  <div className="flex justify-center items-center font-semibold hover:text-white  bg-slate-200 p-2 mt-2 rounded-full w-[40%] hover:bg-black duration-700 cursor-pointer">
                     <a href={item.live} className="">
                       Live
                     </a>
