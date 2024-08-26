@@ -22,7 +22,7 @@ export default function AuthLayout({ children }) {
           return (
             <Link href={link.href} key={link.name}>
               <p
-                className={`cursor-pointer mr-3 text-xl font-normal transition-all duration-300 ${
+                className={`cursor-pointer mr-3 text-xl font-normal transition-all duration-1000 ${
                   isActive
                     ? "font-bold text-blue-800 underline-animation"
                     : "text-slate-900"
