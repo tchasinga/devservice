@@ -20,7 +20,7 @@ export default function AuthLayout({ children }) {
         {navLinks.map((link) => {
           const isActive = pathname.startsWith(link.href);
           return (
-            <Link href={link.href} key={link.name}>
+            <Link href={link.href} key={link.name} className="divide-x-2">
               <p
                 className={`cursor-pointer mr-3 text-xl font-normal transition-all duration-1000 ${
                   isActive
