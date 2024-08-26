@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import projectmanager from "../Data/Upworks";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Metadata } from 'next'
+
+
+
+export const metadata = {
+  title: 'Website section',
+};
+
 
 export default function Website() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
