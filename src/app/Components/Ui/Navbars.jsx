@@ -23,7 +23,7 @@ export default function Navbars() {
     { name: "About us", link: "#description" },
     { name: "Services", link: "#services" },
     { name: "Apply-now", link: "../../apply" },
-    { name: "Our-works", link: "../../design" },
+    { name: "Our-works", link: "../../website" },
     { name: "Contact", link: "#contact" },
   ];
 
