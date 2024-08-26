@@ -7,7 +7,7 @@ const mobiledater = [
         title: "Task manager",
         detail: "Organizes Tasks: Keeps track of what needs to be done. Prioritizes: Helps users focus on important or urgent tasks. Tracks Progress: Allows users to see completed tasks and monitor progress. Manage…",
         myimage : todoMananger,
-        download: ""
+        download: "https://expo.dev/accounts/tchasinga/projects/beright-native/builds/8ab04c28-8f79-46b6-a95b-4256b732f5fe"
     },
     {
         id: 2,
