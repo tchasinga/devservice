@@ -11,7 +11,7 @@ import Stuffseller from "../Balance/ScreenshotStuff.png";
 import MessageApp from "../Balance/TchatAppKozeri.png";
 import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
 
- export const  ProjectManager = [
+const  projectmanager = [
     {
         id: 1,
         title: "Stuff-seller",
@@ -52,6 +52,14 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
       },
       {
         id: 5,
+        title: "essica car pet cleaning",
+        image: essicacarpetcleaning,
+        details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
+        techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
+        live: "https://essicacarpetcleaning.com",
+      }, 
+      {
+        id: 6,
         title: "Blogs sharing",
         image: BlogsSharing,
         details:
@@ -63,7 +71,7 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
       },
 
       {
-        id: 6,
+        id: 7,
         title: "LandEstate",
         image: LandEstate,
         details:
@@ -73,7 +81,7 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
         source: "https://github.com/tchasinga/Real-Estate-house-Marketplace",
       },
       {
-        id: 7,
+        id: 8,
         title: "workours-management",
         image: workoursmanagement,
         details:
@@ -83,7 +91,7 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
         source: "https://github.com/tchasinga/system-manager",
       },
       {
-        id: 8,
+        id: 9,
         title: "Message App",
         image: MessageApp,
         details : "It seems like you might be referring to a message chatting application or functionality. Could you please provide more details on what you need help with? For instance, are you looking to implement…",
@@ -92,7 +100,7 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
         source : "https://github.com/tchasinga/messagge-tchatting"
        }, 
        {
-        id: 9,
+        id: 10,
         title: "Magazine shopping",
         image: Magazineshopping,
         details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
@@ -100,12 +108,6 @@ import essicacarpetcleaning from '../Balance/essicacarpetcleaning.png'
         live: "https://magazine-shopping.onrender.com/",
         source: "https://github.com/tchasinga/magazine-shopping",
       },
-      {
-        id: 9,
-        title: "essica car pet cleaning",
-        image: essicacarpetcleaning,
-        details: "Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
-        techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
-        live: "https://essicacarpetcleaning.com",
-      }, 
 ]
+
+export default projectmanager;

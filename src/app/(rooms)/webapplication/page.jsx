@@ -3,7 +3,7 @@ import React from 'react'
 export default function webapplication() {
   return (
     <div>
-      <h1>Web application</h1>
+      <h1>Web Application</h1>
     </div>
   )
 }
