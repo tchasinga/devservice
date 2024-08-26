@@ -14,7 +14,7 @@ const mobiledater = [
         title: "Thinker",
         detail: "A meditation app can be a powerful tool for promoting mental well-being and mindfulness. It provides users with guided meditations, breathing exercises, and relaxation techniques that can help reduce stress and anxiety. The app's accessibility allows for convenient practice, whether at home or on the go, making it easy to incorporate meditation",
         myimage: myAppmanager,
-        download: ""
+        download: "https://expo.dev/accounts/tchasinga/projects/kanisa/builds/2169066c-8fbb-4015-9e67-263e6118a25f"
     }
 ]
 
