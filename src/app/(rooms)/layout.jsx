@@ -16,13 +16,13 @@ export default function AuthLayout({ children }) {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="flex gap-3 mt-[10%]">
+      <div className="flex gap-3 flex-wrap w-full mt-[10%]">
         {navLinks.map((link) => {
           const isActive = pathname.startsWith(link.href);
           return (
             <Link href={link.href} key={link.name} className="divide-x-2">
               <p
-                className={`cursor-pointer mr-3 text-xl font-normal transition-all duration-1000 ${
+                className={`cursor-pointer mr-3 hover:text-green-700 text-xl font-normal transition-all duration-1000 ${
                   isActive
                     ? "font-bold text-blue-800 underline-animation"
                     : "text-slate-900"
