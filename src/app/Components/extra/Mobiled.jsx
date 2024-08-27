@@ -17,7 +17,7 @@ export default function Mobiled() {
 
   return (
     <div>
-      <div className="gridGeneralY">
+      <div className="gridGeneralY px-4">
         {mobiledater.slice(0).map((item, index) => (
           <motion.div
             key={item.id}

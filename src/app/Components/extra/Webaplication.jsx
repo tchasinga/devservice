@@ -21,7 +21,7 @@ export default function Webaplication() {
 
   return (
     <div>
-      <div className="gridGeneralY">
+      <div className="gridGeneralY px-4">
         {projectmanager.slice(5,10).map((item, index) => (
           <motion.div
             key={item.id}

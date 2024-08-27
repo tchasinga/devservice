@@ -29,7 +29,7 @@ export default function Website() {
 
   return (
     <div>
-      <div className="gridGeneralY ">
+      <div className="gridGeneralY px-4">
         {projectmanager.slice(0, 5).map((item, index) => (
           <motion.div
             key={item.id}
