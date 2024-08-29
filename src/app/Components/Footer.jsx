@@ -87,8 +87,8 @@ function Footer() {
       <div className="h-10px mb-0 w-full flex items-center flex-col">
         <div className="bg-white h-[0.3px] w-[100%]"></div>
         <h3 className="font-poppins font-sans m-3">
-          all rights reserved{" "}
-          <span className="text-orange-500 font-bold">@Devservice</span>
+          all rights reserved{" "} {new Date().getFullYear()}
+          <span className="text-orange-500 font-bold"> @Devservice </span>
         </h3>
       </div>
     </div>
