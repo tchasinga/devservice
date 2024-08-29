@@ -63,7 +63,6 @@ export default function Heros() {
           </div>
         </div>
 
-        {/* Second div is here */}
         <div className="flex justify-center items-center myDirection">
           <div className="w-full relative">
             <div
