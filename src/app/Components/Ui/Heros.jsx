@@ -24,8 +24,6 @@ export default function Heros() {
     const interval = setInterval(() => {
       setBgColor(getRandomColor());
     }, 3000); 
-
-    // Clear the interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
