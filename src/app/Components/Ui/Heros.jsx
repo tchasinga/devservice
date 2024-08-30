@@ -21,7 +21,6 @@ export default function Heros() {
   const [bgColor, setBgColor] = useState(getRandomColor());
 
   useEffect(() => {
-    // Function to change the background 
     const interval = setInterval(() => {
       setBgColor(getRandomColor());
     }, 3000); // Change color every 3 seconds
