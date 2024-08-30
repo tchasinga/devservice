@@ -23,7 +23,7 @@ export default function Heros() {
   useEffect(() => {
     const interval = setInterval(() => {
       setBgColor(getRandomColor());
-    }, 3000); // Change color every 3 seconds
+    }, 3000); 
 
     // Clear the interval on component unmount
     return () => clearInterval(interval);
