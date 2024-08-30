@@ -17,7 +17,7 @@ const getRandomColor = () => {
 };
 
 export default function Heros() {
-  // State to store the current background color
+  
   const [bgColor, setBgColor] = useState(getRandomColor());
 
   useEffect(() => {
