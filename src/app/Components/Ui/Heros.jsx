@@ -6,7 +6,7 @@ import Image from "next/image";
 import "./extension.css";
 import SparklesText from "../../../app/Animation/magicui/SparklesText";
 
-// Function to generate a random    
+// Function to generate a     
 const getRandomColor = () => {
   const letters = "0123456789ABCDEF";
   let color = "#";
