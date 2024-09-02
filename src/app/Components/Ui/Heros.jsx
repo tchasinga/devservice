@@ -1,11 +1,9 @@
-
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import myImgIsadded from "../Images/REdI.png";
 import Image from "next/image";
 import "./extension.css";
 import SparklesText from "../../../app/Animation/magicui/SparklesText";
-
 
 const getRandomColor = () => {
   const letters = "0123456789ABCDEF";
@@ -16,16 +14,13 @@ const getRandomColor = () => {
   return color;
 };
 
-
-
 export default function Heros() {
-  
   const [bgColor, setBgColor] = useState(getRandomColor());
 
   useEffect(() => {
     const interval = setInterval(() => {
       setBgColor(getRandomColor());
-    }, 3000); 
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
