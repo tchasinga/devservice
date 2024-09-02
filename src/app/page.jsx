@@ -15,15 +15,6 @@ export default function Home() {
       <div>
         <About />
       </div>
-      {/* Add type of services task for  TCHASINGA BALOLEBWAMI (for me)*/}
-
-      {/* All the footer section TRACY MIRANJA...*/}
-
-      {/* thsi section is finished , I'll just need to add the responsive...*/}
-
-      {/* Add about us section  task for TRACY MIRANJA...*/}
-
-      {/* Add type of services task for  TCHASINGA BALOLEBWAMI (for me)*/}
 
       <Servicetypeof />
       <div>
