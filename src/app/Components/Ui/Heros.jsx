@@ -16,7 +16,7 @@ const getRandomColor = () => {
   return color;
 };
 
-// main function
+
 
 export default function Heros() {
   
