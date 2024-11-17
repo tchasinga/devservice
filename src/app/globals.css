@@ -18,14 +18,14 @@ html {
 }
 
 .about-section {
-  background-image: url("./Components/Images/ourteam.jpg");
+  background-image: url("./Components/Images/ourteam.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .sectionA {
-  background-image: url("./Components//Images/progmers.jpg");
+  background-image: url("./Components//Images/progmers.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
